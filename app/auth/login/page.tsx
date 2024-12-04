@@ -5,7 +5,7 @@ import { FormEvent, useState } from "react"
 import { signInWithEP, signInWithGoogle } from "@/firebase/auth"
 import { FaUser, FaLock } from "react-icons/fa"
 
-export default () => {
+export default function Login() {
     const { userLoggedIn } = useAuth()
 
     const [email, setEmail] = useState('')
