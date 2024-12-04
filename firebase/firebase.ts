@@ -24,8 +24,5 @@ if (await isSupported()) {
 }
 
 const auth = getAuth(app)
-if (process.env.NEXT_PUBLIC_USE_EMULATOR === "true") {
-    connectAuthEmulator(auth, 'http://localhost:5000')
-}
 
 export { app, auth }

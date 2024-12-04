@@ -22,12 +22,14 @@ export default function Login() {
         }
     }
 
-    const onGoogleSignIn = async (e: Event) => {
+    const onGoogleSignIn = async (e: FormEvent<HTMLButtonElement>) => {
         e.preventDefault()
+
+        console.log('test')
 
         if (!signingIn) {
             setSigningIn(true)
-            signInWithGoogle().catch((err) => setSigningIn(false))
+            signInWithGoogle()
         }
     }
 
@@ -51,6 +53,8 @@ export default function Login() {
                 </div>
 
                 <button type="submit" className="w-full h-[45px] bg-white mt-5 rounded-full border-none outline-none shadow-sm cursor-pointer text-[#333] text-lg font-semibold">Login</button>
+
+                <button type="button" onClick={onGoogleSignIn} className="w-full h-[45px] bg-white mt-5 rounded-full border-none outline-none shadow-sm cursor-pointer text-[#333] text-lg font-semibold">Continue with Google</button>
             </form>
         </div>
     )

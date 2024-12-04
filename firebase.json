@@ -1,11 +1,13 @@
 {
   "hosting": {
-    "public": "dist",
+    "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "site": "ventory-cdd86"
+    "frameworksBackend": {
+      "region": "europe-west1"
+    }
   }
 }
