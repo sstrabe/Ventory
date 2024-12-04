@@ -19,7 +19,9 @@
 
 # production
 /build
-/dist/
+/dist
+
+/.firebase
 
 # misc
 .DS_Store
