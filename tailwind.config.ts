@@ -13,6 +13,9 @@ const config: Config = {
         secondary: "#d1d5db",
         icon: "#f43f5e"
       },
+      backgroundImage: {
+        'triangles': "url('/background.svg')"
+      }
     },
   },
   plugins: [],
