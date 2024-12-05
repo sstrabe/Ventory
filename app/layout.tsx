@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     return (
         <html>
             
-            <body className="bg-background">
+            <body className="bg-background bg-center bg-cover fixed bg-triangles filter brightness-50">
                 <AuthProvider>
                     { children }
                 </AuthProvider>
