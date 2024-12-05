@@ -1,4 +1,4 @@
-"use client";
+i"use client";
 
 import { useAuth } from "@/contexts/authContext"
 import { FormEvent, useState } from "react"
@@ -42,9 +42,9 @@ export default function Login() {
                     <FaUser size="20px" className="ml-[-40px]"/>
                 </div>
 
-                <div className="w-[100%] mt-[30px] relative h-10">
+                <div className="w-[100%] mt-[30px] relative h-10 flex justify-start items-center">
                     <input type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Password" required className="w-full h-full bg-transparent outline-none border-2 border-solid border-[rgba(255,255,255,.2)] rounded-full placeholder:text-white pt-5 pb-5 pl-5 pr-10"/>
-                    <FaLock size="20px" className="absolute right-5 top-[50%] translate-y-[-50%]"/>
+                    <FaLock size="20px" className="ml-[-40px]"/>
                 </div>
 
                 <div className="flex justify-between text-sm mt-[15px] mb-[15px] mx-5">
