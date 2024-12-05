@@ -34,7 +34,7 @@ export default function Login() {
     }
 
     return (
-        <div className="m-0 h-[100vh] w-[100vw] bg-triangles grid justify-center items-center bg-center bg-cover">
+        <div className="m-0 h-[100vh] w-[100vw] bg-triangles grid justify-center items-center bg-center bg-cover fixed">
             <form onSubmit={onSubmit} className="m-10 w-[75vw] sm:w-[50vw] lg:w-[30vw] xl:[10vw] text-white rounded-lg p-8 bg-transparent border-solid border-2 border-[rgba(255,255,255,.2)] backdrop-blur-3xl shadow-xl">
                 <h1 className="text-4xl text-center">Login</h1>
                 <div className="w-[100%] mt-[30px] relative h-10 flex justify-start items-center">
