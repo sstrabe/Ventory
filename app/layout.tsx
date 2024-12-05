@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     return (
         <html>
             
-            <body>
+            <body className="bg-background">
                 <AuthProvider>
                     { children }
                 </AuthProvider>
