@@ -4,6 +4,7 @@ import { useAuth } from "@/contexts/authContext"
 import { FormEvent, useState } from "react"
 import { signInWithEP, signInWithGoogle } from "@/firebase/auth"
 import { FaUser, FaLock } from "react-icons/fa"
+import { useCookies } from "next-client-cookies";
 
 export default function Login() {
     const { userLoggedIn } = useAuth()
@@ -12,13 +13,15 @@ export default function Login() {
     const [password, setPassword] = useState('')
     const [signingIn, setSigningIn] = useState(false)
     const [errorMessage, setErrorMessage] = useState('')
+    const cookies = useCookies()
 
     const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
         if (!signingIn) {
             setSigningIn(true)
-            await signInWithEP(email, password)
+            const credential = await signInWithEP(email, password)
+            cookies.set('access-token', await credential.user.getIdToken(true))
         }
     }
 
