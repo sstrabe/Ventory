@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, updatePassword } from "firebase/auth";
+import { GoogleAuthProvider, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signInWithRedirect, updatePassword } from "firebase/auth";
 import { auth } from "./firebase";
 
 export const signInWithEP = (email: string, password: string) => {
@@ -7,7 +7,7 @@ export const signInWithEP = (email: string, password: string) => {
 
 export const signInWithGoogle = async () => {
     const provider = new GoogleAuthProvider();
-    const result = await signInWithPopup(auth, provider);
+    const result = await signInWithRedirect(auth, provider);
 
     return result;
 };
