@@ -39,7 +39,7 @@ export default function Login() {
                 <h1 className="text-4xl text-center">Login</h1>
                 <div className="w-[100%] mt-[30px] relative h-10 flex justify-center items-center">
                     <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" required className="w-full h-full bg-transparent outline-none border-2 border-solid border-[rgba(255,255,255,.2)] rounded-full placeholder:text-white pt-5 pb-5 pl-5 pr-10"/>
-                    <FaUser size="20px" className="ml-[-20px]"/>
+                    <FaUser size="20px" className="ml-[-50px]"/>
                 </div>
 
                 <div className="w-[100%] mt-[30px] relative h-10">
