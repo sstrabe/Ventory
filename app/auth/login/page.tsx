@@ -37,9 +37,9 @@ export default function Login() {
         <div className="m-0 h-[100vh] w-[100vw] bg-triangles grid justify-center items-center bg-center bg-cover">
             <form onSubmit={onSubmit} className="m-10 w-[75vw] sm:w-[50vw] lg:w-[30vw] xl:[10vw] text-white rounded-lg p-8 bg-transparent border-solid border-2 border-[rgba(255,255,255,.2)] backdrop-blur-3xl shadow-xl">
                 <h1 className="text-4xl text-center">Login</h1>
-                <div className="w-[100%] mt-[30px] relative h-10">
+                <div className="w-[100%] mt-[30px] relative h-10 flex">
                     <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" required className="w-full h-full bg-transparent outline-none border-2 border-solid border-[rgba(255,255,255,.2)] rounded-full placeholder:text-white pt-5 pb-5 pl-5 pr-10"/>
-                    <FaUser size="20px" className="absolute right-5 top-[50%] translate-y-[-50%]"/>
+                    <FaUser size="20px" className="absolute right-5"/>
                 </div>
 
                 <div className="w-[100%] mt-[30px] relative h-10">
