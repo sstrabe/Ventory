@@ -9,7 +9,7 @@ import { getAuth, connectAuthEmulator } from "firebase/auth";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyCsspfjcyip5PAOC-nuG2eZ_QybWt6khns",
-  authDomain: "ventory-cdd86.firebaseapp.com",
+  authDomain: "project.strabix.com",
   projectId: "ventory-cdd86",
   storageBucket: "ventory-cdd86.firebasestorage.app",
   messagingSenderId: "742630000257",
