@@ -4,6 +4,11 @@ import { useAuth } from "@/contexts/authContext"
 import { FormEvent, useState } from "react"
 import { signInWithEP, signInWithGoogle } from "@/firebase/auth"
 import { FaUser, FaLock } from "react-icons/fa"
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Ventory | Login"
+}
 
 export default function Login() {
     const { userLoggedIn } = useAuth()
